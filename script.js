@@ -1,8 +1,11 @@
 let books =[
-    { id:'',  title: 'The Power of Habit', author: 'Charles Duhigg' },
-    { id: '', title: 'Atomic Habits', author: 'James Clear' },
-    { id: '', title: 'The Alchemist', author: 'Paulo Coelho' }
-];
+    { id: 1, title: 'The Power of Habit', author: 'Charles Duhigg' },
+    { id: 2, title: 'Atomic Habits', author: 'James Clear' },
+    { id: 3, title: 'The Alchemist', author: 'Paulo Coelho' },
+    
+  
+    
+]
 
 const bookCountElement = document.querySelector('.bookCount');
 const table = document.querySelector('.table');
@@ -26,6 +29,8 @@ function createTable(){
     let buttonText = document.createTextNode('Supprimer');
     deleteButton.setAttribute('class', 'deleteButton');
     deleteButton.appendChild(buttonText);
+
+    
 
 
     for (let element = 0; element < books.length; element++){
@@ -111,8 +116,7 @@ setbookCount(books.length);
   let cell2 = row.insertCell(2);
   const cell2Text = document.createTextNode(author);
   cell2.appendChild(cell2Text);
-  row.appendChild(cell2);
-
+  row.appendChild(cell2); 
   //Creer le bouton de suppression
   let buttonCell = document.createElement('td');
   let deleteButton = document.createElement('button');
