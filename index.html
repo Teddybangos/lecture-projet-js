@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Suivi de lecture">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suivi de lecture</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+<div class="title-content">
+    <h2>Suivi de lecture <span class="bookCount">0</span></h2>
+    <button id="addBookModalButton" type="button"> Ajouter</button>
+</div>
+
+
+
+<div class="modal" id="bookModal">  
+<div class="modal-content">
+    <span class="close"> X </span>
+    <div class="form"></div>
+    <form method="">
+
+        <label for="ID">ID</label>
+        <input class="form-input" type="number" id="ID" name="ID" placeholder="ID">
+
+        <label for="author">Auteur</label>
+        <input class="form-input" type="text" id="author" name="author" placeholder="Auteur">
+
+        <label for="title">Titre</label>
+        <input class="form-input" type="text" id="title" name="title" placeholder="Titre">
+
+        <button type="submit" class="addBookButton"> Ajouter</button>
+    </form>
+</div>
+</div>
+
+<div class="book">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Auteur</th>
+                <th>Titre</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <!-- <tbody id="bookList">
+            <tr>
+                <td>1</td>
+                <td>Dale Canergie</td>
+                <td>Comment se faire des amis</td>
+                <td>
+                    <button class="readButton">Lu</button>
+                    <button class="deleteButton">Supprimer</button>
+                </td>
+            </tr>
+
+        </tbody> -->
+    </table>
+</div>
+</body>
+<script src="script.js"></script>
+
+</html>
